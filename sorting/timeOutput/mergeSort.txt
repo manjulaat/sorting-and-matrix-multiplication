@@ -1,0 +1,35 @@
+
+***Merge Sort***
+~Random Numbers~
+
+100 Numbers: 2.2e-05
+
+
+1000 Numbers: 0.000199
+
+
+10000 Numbers: 0.002598
+
+
+~Sorted Numbers~
+
+100 Numbers: 1.4e-05
+
+
+1000 Numbers: 0.000108
+
+
+10000 Numbers: 0.001383
+
+
+~Reverse Order Numbers~
+
+100 Numbers: 1.4e-05
+
+
+1000 Numbers: 0.000109
+
+
+10000 Numbers: 0.001353
+
+

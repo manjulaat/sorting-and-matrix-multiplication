@@ -1,0 +1,22 @@
+*** Cache Matrix Multiplication ***
+
+~ Same Dimention Matrices ~
+
+3X3 * 3X3 Matrices dimensions: 2e-06
+
+10X10 * 10X10 Matrices dimensions: 7e-06
+
+20X20 * 20X20 Matrices dimensions: 4.2e-05
+
+50X50 * 50X50 Matrices dimensions: 0.000645
+
+~ Different Dimention Matrices ~
+
+2X3 * 3X4 Matrices dimensions: 3e-06
+
+10X14 * 14X5 Matrices dimensions: 6e-06
+
+30X25 * 25X56 Matrices dimensions: 0.000212
+
+50X50 * 50X10 Matrices dimensions: 0.000125
+

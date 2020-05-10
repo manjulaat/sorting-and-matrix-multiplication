@@ -1,0 +1,38 @@
+
+***Selection Sort Time***
+~Random Numbers~
+
+100 Numbers: 3e-05
+
+
+1000 Numbers: 0.001661
+
+
+10000 Numbers: 0.168028
+
+
+
+~Sorted Numbers~
+
+100 Numbers: 2.2e-05
+
+
+1000 Numbers: 0.001562
+
+
+10000 Numbers: 0.17148
+
+
+
+~Reverse Order Numbers~
+
+100 Numbers: 2.3e-05
+
+
+1000 Numbers: 0.001633
+
+
+10000 Numbers: 0.175313
+
+
+

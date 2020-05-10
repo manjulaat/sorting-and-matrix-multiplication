@@ -1,0 +1,35 @@
+
+***Quick Sort***
+~Random Numbers~
+
+100 Numbers: 1.2e-05
+
+
+1000 Numbers: 0.00015
+
+
+10000 Numbers: 0.001812
+
+
+~Sorted Numbers~
+
+100 Numbers: 5.9e-05
+
+
+1000 Numbers: 0.005292
+
+
+10000 Numbers: 0.43283
+
+
+~Reverse Order Numbers~
+
+100 Numbers: 2.7e-05
+
+
+1000 Numbers: 0.002403
+
+
+10000 Numbers: 0.287003
+
+

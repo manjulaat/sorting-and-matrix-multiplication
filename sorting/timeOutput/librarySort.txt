@@ -1,0 +1,35 @@
+
+***Library Sort***
+~Random Numbers~
+
+100 Numbers: 8e-06
+
+
+1000 Numbers: 5.6e-05
+
+
+10000 Numbers: 0.000657
+
+
+~Sorted Numbers~
+
+100 Numbers: 4e-06
+
+
+1000 Numbers: 8e-06
+
+
+10000 Numbers: 6.2e-05
+
+
+~Reverse Order Numbers~
+
+100 Numbers: 4e-06
+
+
+1000 Numbers: 8e-06
+
+
+10000 Numbers: 5e-05
+
+
