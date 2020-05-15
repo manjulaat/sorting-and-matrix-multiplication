@@ -1,0 +1,34 @@
+*** Strassen Matrix Multiplication ***
+
+~ Same Dimension Matrices ~
+
+3X3 * 3X3 Matrices dimensions: 3.45e-06
+
+10X10 * 10X10 Matrices dimensions: 9.21e-06
+
+20X20 * 20X20 Matrices dimensions: 4.76e-05
+
+50X50 * 50X50 Matrices dimensions: 0.000836
+
+100X100 * 100X100 Matrices dimensions: 0.0054368
+
+200X200 * 200X200 Matrices dimensions: 0.045643
+
+500X500 * 500X500 Matrices dimensions: 0.576432
+
+~ Different Dimension Matrices ~
+
+2X3 * 3X4 Matrices dimensions: 5e-06
+
+10X14 * 14X5 Matrices dimensions: 9.87e-06
+
+30X25 * 25X56 Matrices dimensions: 0.000306
+
+50X50 * 50X10 Matrices dimensions: 0.000198
+
+200X100 * 100X100 Matrices dimensions: 0.013653
+
+250X200 * 200X100 Matrices dimensions: 0.022345
+
+500X500 * 500X300 Matrices dimensions: 0.286321
+

@@ -4,19 +4,31 @@
 
 3X3 * 3X3 Matrices dimensions: 3e-06
 
-10X10 * 10X10 Matrices dimensions: 7e-06
+10X10 * 10X10 Matrices dimensions: 8e-06
 
-20X20 * 20X20 Matrices dimensions: 4.3e-05
+20X20 * 20X20 Matrices dimensions: 4.7e-05
 
-50X50 * 50X50 Matrices dimensions: 0.000642
+50X50 * 50X50 Matrices dimensions: 0.000729
 
-~ Different Dimention Matrices ~
+100X100 * 100X100 Matrices dimensions: 0.006636
 
-2X3 * 3X4 Matrices dimensions: 3e-06
+200X200 * 200X200 Matrices dimensions: 0.045349
 
-10X14 * 14X5 Matrices dimensions: 5e-06
+500X500 * 500X500 Matrices dimensions: 0.71044
 
-30X25 * 25X56 Matrices dimensions: 0.000223
+~ Different Dimension Matrices ~
 
-50X50 * 50X10 Matrices dimensions: 0.000147
+2X3 * 3X4 Matrices dimensions: 2e-06
+
+10X14 * 14X5 Matrices dimensions: 4e-06
+
+30X25 * 25X56 Matrices dimensions: 0.000185
+
+50X50 * 50X10 Matrices dimensions: 0.000116
+
+200X100 * 100X100 Matrices dimensions: 0.00931
+
+250X200 * 200X100 Matrices dimensions: 0.035237
+
+500X500 * 500X300 Matrices dimensions: 0.462655
 

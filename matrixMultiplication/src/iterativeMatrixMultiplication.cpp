@@ -2,9 +2,15 @@
 #include <fstream>
 using namespace std;
 
+/**
+ * Iterative Matrix Multiplication
+ * @ param InputFileName here reading three input data sets in each line()
+ * @ param dataOutfile to write sorted output array
+ * @ param timeFile to write sorting times
+ */
 void printMatrixTime(string fileName, ofstream& dataOutFile, ofstream& timeFile) {
     ifstream dataInputFile(fileName);
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 7; i++) {
         int m1, n1, m2, n2;
         dataInputFile >> m1;
         dataInputFile >> n1;
@@ -14,8 +20,8 @@ void printMatrixTime(string fileName, ofstream& dataOutFile, ofstream& timeFile)
             cout << "Multiplication of matrices is not possible, n2 and m1 are not equal \n";
         }
 
-        int A[m1][n1];
-        int B[m2][n2];
+        long A[m1][n1];
+        long B[m2][n2];
         for (int i = 0; i < m1; i++) {
             for (int j = 0; j < n1; j++) {
                 A[i][j] = rand() % 10;
@@ -27,7 +33,7 @@ void printMatrixTime(string fileName, ofstream& dataOutFile, ofstream& timeFile)
             }
         }
 
-        int C[m1][n2];
+        long C[m1][n2];
         const clock_t begin_time = clock();
         for (int i = 0; i < m1; i++) { 
             for (int j = 0; j < n2; j++) { 
@@ -38,11 +44,9 @@ void printMatrixTime(string fileName, ofstream& dataOutFile, ofstream& timeFile)
             } 
         }
 		const clock_t end_time = clock();
-
-
+//Time Taken will be directly saved to Time Output file(timeOutput/iterativeMatrixMultiplication.txt)
         cout << m1 << "X" << n1 << " * " << m2 << "X" << n2 << " Matrices dimensions: " << float( end_time - begin_time ) /  CLOCKS_PER_SEC << "\n\n";
         timeFile << m1 << "X" << n1 << " * " << m2 << "X" << n2 << " Matrices dimensions: " << float( end_time - begin_time ) /  CLOCKS_PER_SEC << "\n\n";
-        
         dataOutFile << m1 << "X" << n1 << " * " << m2 << "X" << n2 << " Matrices dimensions: ";
         dataOutFile << "Matrix A \n";
         for (int i = 0; i < m1; i++) {
@@ -63,7 +67,7 @@ void printMatrixTime(string fileName, ofstream& dataOutFile, ofstream& timeFile)
             dataOutFile << "\n";
         }
         dataOutFile << "\n";
-
+//Result matrix and 2 matrices(with dimension) are mentioned in text file in DataOutput file(dataOuput/iterativeMatrixMultiplication.txt)
         dataOutFile << "Result Matrix C \n";
         for (int i = 0; i < m1; i++) {
             for (int j = 0; j < n2; j++) {
@@ -77,7 +81,9 @@ void printMatrixTime(string fileName, ofstream& dataOutFile, ofstream& timeFile)
     }
     dataInputFile.close();
 }
-
+/*calling functions to take data from inputfile and sending result to outputfile
+*result time in time outputfile 
+*/
 int main(){
     ofstream dataOutFile("../dataOutput/iterativeMatrixMultiplication.txt");
     ofstream timeFile("../timeOutput/iterativeMatrixMultiplication.txt");

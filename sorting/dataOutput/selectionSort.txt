@@ -1,5 +1,5 @@
 
-***Selection Sort Time***
+***Selection Sort***
 ~Random Numbers~
 
 100 Numbers:

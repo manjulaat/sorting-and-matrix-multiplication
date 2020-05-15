@@ -2,34 +2,34 @@
 ***Merge Sort***
 ~Random Numbers~
 
-100 Numbers: 2.2e-05
+100 Numbers: 2.4e-05
 
 
-1000 Numbers: 0.000199
+1000 Numbers: 0.000246
 
 
-10000 Numbers: 0.002598
+10000 Numbers: 0.00186
 
 
 ~Sorted Numbers~
 
-100 Numbers: 1.4e-05
+100 Numbers: 1e-05
 
 
-1000 Numbers: 0.000108
+1000 Numbers: 8.5e-05
 
 
-10000 Numbers: 0.001383
+10000 Numbers: 0.00107
 
 
 ~Reverse Order Numbers~
 
-100 Numbers: 1.4e-05
+100 Numbers: 1.1e-05
 
 
-1000 Numbers: 0.000109
+1000 Numbers: 8.6e-05
 
 
-10000 Numbers: 0.001353
+10000 Numbers: 0.001061
 
 

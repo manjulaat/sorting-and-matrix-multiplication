@@ -1,6 +1,15 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
+
+/**
+ * Merge function for two subarrays to sort given input datasets
+ * 
+ * @param  array to merge 
+ * @param l left Index of array
+ * @param m middle Index of array
+ * @param r right Index of array
+ */
 void merge(int *array,int l,int m,int r){
     int i=l;
     int k=0;
@@ -35,7 +44,7 @@ void merge(int *array,int l,int m,int r){
     }
     
 }
-
+ /* left is left Index and right right Index of the array of arr to be sorted*/
 void mergeSort(int *arr,int left,int right){
     if(left<right){
         int mid=(right+left)/2;
@@ -44,6 +53,11 @@ void mergeSort(int *arr,int left,int right){
         merge(arr,left,mid,right);
     }
 }
+/**
+ * @ param InputFileName here reading three input data sets in each line()
+ * @ param dataOutfile to write sorted output array
+ * @ param timeFile to write sorting times
+ */
 
 void printMergeSortTime(string inputFileName, ofstream& dataOutFile, ofstream& timeFile ) {
     ifstream dataInputFile(inputFileName);
@@ -57,13 +71,13 @@ void printMergeSortTime(string inputFileName, ofstream& dataOutFile, ofstream& t
         const clock_t begin_time = clock();
         mergeSort(array, 0, sizeOfArray-1);
         const clock_t end_time = clock();
-        
+        //result to data Output file(dataOutput/mergeSort.txt)
         dataOutFile << "\n" << sizeOfArray << " Numbers:" << "\n";
         for (int i = 0; i < sizeOfArray; i++) {
             dataOutFile << array[i] << " ";
         }
         dataOutFile << "\n\n";
-
+        //Time taken to time Output file(timeOutput/mergeSort.txt)
         timeFile << "\n" << sizeOfArray << " Numbers:" << " " << float( end_time - begin_time ) /  CLOCKS_PER_SEC << "\n\n";
 
         cout << float( end_time - begin_time ) /  CLOCKS_PER_SEC << "\n";
@@ -71,24 +85,29 @@ void printMergeSortTime(string inputFileName, ofstream& dataOutFile, ofstream& t
     timeFile << "\n";
     cout << "\n";
 }
+/**
+ * In main function
+ * assigning Dataout,timeOutput files where it store the result data and time taken for sorting
+ * calling the printMergeSortTime function, in which sorint function is called
+ */
 
 int main(){
-    ofstream timeFile("../timeOutputs/mergeSort.txt", ios::ate);
-    ofstream dataOutFile("../dataOutputs/mergeSort.txt", ios::ate);
+    ofstream timeFile("../timeOutput/mergeSort.txt", ios::ate);
+    ofstream dataOutFile("../dataOutput/mergeSort.txt", ios::ate);
     timeFile << "\n" << "***Merge Sort***" << "\n";
     dataOutFile << "\n" << "***Merge Sort***" << "\n";
 
     timeFile << "~" << "Random Numbers" << "~" << "\n";
     dataOutFile << "~" << "Random Numbers" << "~" << "\n";
-    printMergeSortTime("../dataInputs/randomNumbers.txt", dataOutFile, timeFile);
+    printMergeSortTime("../dataInput/randomNumbers.txt", dataOutFile, timeFile);
 
     timeFile << "~" << "Sorted Numbers" << "~" << "\n";
     dataOutFile << "~" << "Sorted Numbers" << "~" << "\n";
-    printMergeSortTime("../dataInputs/sortedNumbers.txt", dataOutFile, timeFile);
+    printMergeSortTime("../dataInput/sortedNumbers.txt", dataOutFile, timeFile);
 
     timeFile << "~" << "Reverse Order Numbers" << "~" << "\n";
     dataOutFile << "~" << "Reverse Order Numbers" << "~" << "\n";
-    printMergeSortTime("../dataInputs/reverseOrderNumbers.txt", dataOutFile, timeFile);
+    printMergeSortTime("../dataInput/reverseOrderNumbers.txt", dataOutFile, timeFile);
 
     timeFile.close();
     dataOutFile.close();

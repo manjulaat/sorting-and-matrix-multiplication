@@ -2,34 +2,34 @@
 ***Quick Sort***
 ~Random Numbers~
 
-100 Numbers: 1.2e-05
+100 Numbers: 1e-05
 
 
-1000 Numbers: 0.00015
+1000 Numbers: 0.000132
 
 
-10000 Numbers: 0.001812
+10000 Numbers: 0.001535
 
 
 ~Sorted Numbers~
 
-100 Numbers: 5.9e-05
+100 Numbers: 6.2e-05
 
 
-1000 Numbers: 0.005292
+1000 Numbers: 0.004663
 
 
-10000 Numbers: 0.43283
+10000 Numbers: 0.466648
 
 
 ~Reverse Order Numbers~
 
-100 Numbers: 2.7e-05
+100 Numbers: 3.8e-05
 
 
-1000 Numbers: 0.002403
+1000 Numbers: 0.002996
 
 
-10000 Numbers: 0.287003
+10000 Numbers: 0.328003
 
 
